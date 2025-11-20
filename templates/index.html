@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Career Advisor</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">AI Career Advisor</div>
+      <ul class="nav-links">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'service' %}">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <!--DROP DOWN MENU  will do it later
+            <div class="menu-container" id="dropdownMenu">
+              <ul class="user-menu">
+                <div class="profile-highlight">
+                  <img
+                    id="profileAvatar"
+                    class="avatar-img"
+                    alt="User Avatar"
+                  />
+                  <div class="details">
+                    <div id="profile-name">Loading...</div>
+                    <div id="profile-email">Loading...</div>
+                  </div>
+                </div>
+                <li class="user-menu__item">
+                  <a class="user-menu-link" href="trail.html">Journey Trail</a>
+                </li>
+                <li class="user-menu__item">
+                  <a class="user-menu-link" href="journal.html"
+                    >Your Journals</a
+                  >
+                </li>
+                <li class="user-menu__item">
+                  <a class="user-menu-link" href="#">User Settings</a>
+                </li>
+                <div class="footer">
+                  <li class="user-menu__item">
+                    <a
+                      class="user-menu-link"
+                      href="#"
+                      id="logoutBtn"
+                      style="color: #f44336"
+                      >Logout</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>-->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <h1>Welcome to AI Career Advisor</h1>
+      <p>Find your ideal career path using AI!</p>
+    </div>
+  </body>
+</html>
